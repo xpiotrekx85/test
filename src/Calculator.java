@@ -8,7 +8,7 @@ public class Calculator {
         int pierwszaLiczba = scanner.nextInt();
         System.out.println("podaj drugą liczbę: ");
         int drugaLiczba = scanner.nextInt();
-        System.out.println("Wynik mnożenia:  " + pierwszaLiczba + " * " + drugaLiczba + " = " + (pierwszaLiczba * drugaLiczba));
+        System.out.println("Wynik mnożenia:  " + pierwszaLiczba + " *  " + drugaLiczba + " = " + (pierwszaLiczba * drugaLiczba));
         System.out.println("Wynik odejmowania: " + drugaLiczba + " - " + pierwszaLiczba + " = " + (drugaLiczba - pierwszaLiczba));
 
 
