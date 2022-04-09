@@ -11,6 +11,9 @@ public class PetleFor {
             if(i % 5 == 0)
                  System.out.println(i);
         }
+        for(int j =0; j < number; j++ ) {
+            System.out.println("wypisuje tekst!");
+        }
 
     }
 }
