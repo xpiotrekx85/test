@@ -1,20 +1,45 @@
 public class Metody {
-    public static void main(String[] args) {
-        // ang. methods
 
-        KlasaDlaMetody nazwaObiektu = new KlasaDlaMetody();
-        nazwaObiektu.metodaKtoraNicNieZwraca();
-        nazwaObiektu.metodaKtoraPrzyjmujeArgument(5,'b');
-        nazwaObiektu.nazewnictwoDwolneAleKolejnaMetoda(false, 5);
+    public void policzWynik() {
+        System.out.println("zaraz policze wynik");
+        int result = 0;
+        for (int i = 0; i < 100; i++) {
+            result = i;
 
-        int wynikDodawanie =  nazwaObiektu.dodawanie(5, 6);
-        System.out.println(wynikDodawanie);
-        double dodawanieDabla = nazwaObiektu.dodajCosPoPrzecinku(2.5);
-        System.out.println(dodawanieDabla);
+        }
+        System.out.println("rezultat to " + result);
+    }
 
-        boolean zwracamWartoscBoolean = nazwaObiektu.zamienWartoscLogiczna(true);
-        System.out.println(zwracamWartoscBoolean);
+    public int pobierzWynik() {
+        System.out.println("zaraz policze wynik");
+        int result = 0;
+        for (int i = 0; i < 100; i++) {
+            result = i;
 
-        nazwaObiektu.voidKtoryMialbyCosZwracac(true);
+        }
+        System.out.println("rezultat to " + result);
+        return result;
+    }
+
+    public void policzWynikParam(int number) {
+        System.out.println("number ma wartosc: " + number);
+        System.out.println("zaraz policze wynik");
+        int result = 0;
+        for (int i = 0; i < number; i++) {
+            result = i;
+
+        }
+        System.out.println("rezultat to " + result);
+    }
+
+    public int add(int fistNumber, int secondNumber, String word ) {
+        System.out.println("suma to: " + (fistNumber + secondNumber));
+        System.out.println(word);
+        if(fistNumber == 0) {
+            return 0;
+        }
+        return fistNumber + secondNumber;
+
+
     }
 }

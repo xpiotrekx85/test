@@ -15,7 +15,7 @@ public class Tablice {
 
         for(int i = 0; i < imiona.length; i++) {
             System.out.println(imiona[i]);
-        }
+    }
 
         // wypisz liczby z zakresu 1-100 podzoelne przez 3
         // odwroc elementy tablicy [1,3,5] -> [5,3,1]
@@ -30,9 +30,10 @@ public class Tablice {
         int[] tab = new int[] {1, 3, 5, 7, 0};
 
         for(int i = 0; i < tab.length / 2; i++ ) {
-            int temp = tab[i]; // dla i = 0 1
+            int temp = tab[i]; // dla i = 0 i = 1 3
             tab[i] = tab[(tab.length - 1 - i)]; // 4 -> 0 3 -> 7
-            tab[tab.length-1-i] = temp; // 1
+            tab[tab.length-1-i] = temp; // 1 // tab[3] = 3
+            System.out.println("iteracja numer  " + i);
 
 
         }
